@@ -1,0 +1,11 @@
+<script>
+function getMiddle(s)
+{
+  let regS = s.replace(/(\s*)/g,"");
+  let sLen = regS.length;
+  return (sLen % 2 == 0) ? regS.substr((sLen / 2) - 1, 2) : regS.substr(sLen / 2, 1);
+}
+
+console.log(getMiddle("ab cdef gh"));
+
+</script>
